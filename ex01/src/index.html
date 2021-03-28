@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="/ex01/src/index.css">
   </head>
-  <header><h2>Virtual Keyboard</h2></header>
+  <div class="justified">
+    <header><h2>Virtual Keyboard</h2></header>
+  </div>
   <body onload="load();">
-    <textarea id="tbInput" name="w3review" rows="4" cols="50"></textarea>
+    <div class="justified">
+      <textarea id="tbInput" name="w3review" rows="20" cols="120" placeholder="TEXT AREA"></textarea>
+    </div>
     <!--
     <input id="tbInput" type="text" />
 -->
     <div id="VirtualKey">
-      <input id="btn1" type="button" value="1" onclick="input(this);" />
+      <button id="btn1" type="button" value="1" onclick="input(this);"></button>
       <input id="btn2" type="button" onclick="input(this);" />
       <input id="btn3" type="button" onclick="input(this);" />
       <br />
