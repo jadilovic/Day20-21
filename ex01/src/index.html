@@ -4,48 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Virtual Keyboard</title>
-    <link rel="stylesheet" href="/ex01/src/index.css">
+    <link rel="stylesheet" href="/ex01/src/index.css" />
   </head>
+  <!-- Heading -->
   <div class="justified">
     <header><h2>Virtual Keyboard</h2></header>
   </div>
-  <!-- onload="load();"-->
+  <!-- Text Area-->
   <body>
     <div class="justified">
-      <textarea id="tbInput" name="w3review" rows="15" cols="120" placeholder="TEXT AREA"></textarea>
+      <textarea
+        id="tbInput"
+        name="w3review"
+        rows="10"
+        cols="100"
+        placeholder="TEXT AREA"
+        autofocus
+      ></textarea>
     </div>
-    <!--
-    <input id="tbInput" type="text" />
--->
-    <div id="VirtualKey">
-      <button id="btn1" type="button" value="1" onclick="input(this);">1</button>
-      <button id="btn2" type="button" value="2" onclick="input(this);">2</button>
-      <button id="btn3" type="button" value="3" onclick="input(this);">3</button>
-      <!--
-      <input id="btn2" type="button" onclick="input(this);" />
-      <input id="btn3" type="button" onclick="input(this);" />
-      -->
-      <button class="btn" id="btnA" type="button" value="a">A</button>
-      <button class="btn" id="btnB" type="button" value="b">B</button>
-      <button class="btn" id="btnC" type="button" value="c">C</button>
-
-      <input id="btn4" type="button" onclick="input(this);" />
-      <input id="btn5" type="button" onclick="input(this);" />
-      <input id="btn6" type="button" onclick="input(this);" />
-      <br />
-      <input id="btn7" type="button" onclick="input(this);" />
-      <input id="btn8" type="button" onclick="input(this);" />
-      <input id="btn9" type="button" onclick="input(this);" />
-      <br />
-      <input id="btn0" type="button" onclick="input(this)" />
-      <button class="btn" id="btnDel" type="button" value="Backspace">Backspace</button>
-      <button class="btn" id="btnCapsLock" type="button" value="Capslock">Caps Lock</button>
-      <button class="btn" id="btnShift" type="button" value="Shift">Shift</button>
-      <button class="btn" id="btnSpace" type="button" value=" ">Space</button>
-      <button class="btn" id="btnSubmit" type="button" value="OK">OK</button>
-      <button class="btn" id="btnEnter" type="button" value="Enter">Enter</button>
+    <!-- First Row -->
+    <div class="row">
+      <button class="btn col-1" type="text" value="1">1</button>
+      <button class="btn col-1" type="text" value="2">2</button>
+      <button class="btn col-1" type="text" value="3">3</button>
+      <button class="btn col-1" type="text" value="4">4</button>
+      <button class="btn col-1" type="text" value="5">5</button>
+      <button class="btn col-1" type="text" value="6">6</button>
+      <button class="btn col-1" type="text" value="7">7</button>
+      <button class="btn col-1" type="text" value="8">8</button>
+      <button class="btn col-1" type="text" value="9">9</button>
+      <button class="btn col-1" type="text" value="0">0</button>
+      <button class="btn col-2" id="btnDel" type="text" value="Backspace">
+        Backspace
+      </button>
     </div>
-
+    <!-- Second Row -->
+    <div class="row">
+      <button class="btn col-1" type="text" value="q">q</button>
+      <button class="btn col-1" type="text" value="w">w</button>
+      <button class="btn col-1" type="text" value="e">e</button>
+      <button class="btn col-1" type="text" value="r">r</button>
+      <button class="btn col-1" type="text" value="t">t</button>
+      <button class="btn col-1" type="text" value="y">y</button>
+      <button class="btn col-1" type="text" value="u">u</button>
+      <button class="btn col-1" type="text" value="i">i</button>
+      <button class="btn col-1" type="text" value="o">o</button>
+      <button class="btn col-1" type="text" value="p">p</button>
+      <button class="btn col-2" id="btnCapsLock" type="text" value="Capslock">
+        Caps Lock
+      </button>
+    </div>
+    <!-- Third Row -->
+    <div class="row">
+      <button class="btn col-1" type="text" value="a">a</button>
+      <button class="btn col-1" type="text" value="s">s</button>
+      <button class="btn col-1" type="text" value="d">d</button>
+      <button class="btn col-1" type="text" value="f">f</button>
+      <button class="btn col-1" type="text" value="g">g</button>
+      <button class="btn col-1" type="text" value="h">h</button>
+      <button class="btn col-1" type="text" value="j">j</button>
+      <button class="btn col-1" type="text" value="k">k</button>
+      <button class="btn col-1" type="text" value="l">l</button>
+      <button class="btn col-3" id="btnEnter" type="text" value="Enter">
+        Enter
+      </button>
+    </div>
+    <!-- Fourth Row -->
+    <div class="row">
+      <button class="btn col-1" type="text" value="z">z</button>
+      <button class="btn col-1" type="text" value="x">x</button>
+      <button class="btn col-1" type="text" value="c">c</button>
+      <button class="btn col-1" type="text" value="v">v</button>
+      <button class="btn col-1" type="text" value="b">b</button>
+      <button class="btn col-1" type="text" value="n">n</button>
+      <button class="btn col-1" type="text" value="m">m</button>
+      <button class="btn col-1" type="text" value="-">-</button>
+      <button class="btn col-1" type="text" value="_">_</button>
+      <button class="btn col-3" id="btnShift" type="text" value="Shift">
+        Shift
+      </button>
+    </div>
+    <!--<input id="btn4" type="button" onclick="input(this);" />-->
+    <!-- Fifth Row-->
+    <div class="row">
+      <button class="btn col-9" id="btnSpace" type="text" value=" ">Space</button>
+      <button class="btn col-3" id="btnSubmit" type="text" value="OK">OK</button>
+    </div>
     <script src="/ex01/src/index.js"></script>
   </body>
 </html>
