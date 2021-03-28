@@ -9,18 +9,22 @@
   <div class="justified">
     <header><h2>Virtual Keyboard</h2></header>
   </div>
-  <body onload="load();">
+  <!-- onload="load();"-->
+  <body>
     <div class="justified">
-      <textarea id="tbInput" name="w3review" rows="20" cols="120" placeholder="TEXT AREA"></textarea>
+      <textarea id="tbInput" name="w3review" rows="15" cols="120" placeholder="TEXT AREA"></textarea>
     </div>
     <!--
     <input id="tbInput" type="text" />
 -->
     <div id="VirtualKey">
-      <button id="btn1" type="button" value="1" onclick="input(this);"></button>
+      <button id="btn1" type="button" value="1" onclick="input(this);">1</button>
+      <button id="btn2" type="button" value="2" onclick="input(this);">2</button>
+      <button id="btn3" type="button" value="3" onclick="input(this);">3</button>
+      <!--
       <input id="btn2" type="button" onclick="input(this);" />
       <input id="btn3" type="button" onclick="input(this);" />
-      <br />
+      -->
       <input id="btn4" type="button" onclick="input(this);" />
       <input id="btn5" type="button" onclick="input(this);" />
       <input id="btn6" type="button" onclick="input(this);" />
@@ -33,20 +37,6 @@
       <input id="btnDel" type="button" value="Backspace" onclick="del();" />
     </div>
 
-    <script>
-
-      function input(e) {
-
-        let tblInput = document.getElementById("tbInput");
-        tblInput.value = tbInput.value + e.value;
-         // let tbInput = document.getElementById("tbInput”);
-         // tbInput.value = tbInput.value + e.value;
-      }
-
-      function del() {
-          var tbInput = document.getElementById("tbInput");
-          tbInput.value = tbInput.value.substr(0, tbInput.value.length - 1);
-      }
-    </script>
+    <script src="/ex01/src/index.js"></script>
   </body>
 </html>
